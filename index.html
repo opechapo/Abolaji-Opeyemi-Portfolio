@@ -9,10 +9,10 @@
   </head>
   <body>
     <header class="header">
-      <a href="" class="logo">
+      <a href="#home" class="logo">
         <h2>ABOLAJI</h2>
       </a>
-      <a href="" class="logo2">
+      <a href="#nav-menu" class="logo2">
         <ion-icon name="menu-outline"></ion-icon>
       </a>
     </header>
@@ -20,36 +20,36 @@
     <header class="header2">
       <div class="header2inside">
         <div>
-          <a href="" class="logo0">
+          <a href="#home" class="logo0">
             <h2>ABOLAJI</h2>
           </a>
         </div>
         <div class="homeBoy">
-          <a href="">Home</a>
+          <a href="#home">Home</a>
           <br>
-          <a href="">About</a>
+          <a href="#about">About</a>
           <br>
-          <a href="">Services</a>
+          <a href="#services">Services</a>
           <br>
-          <a href="">Portfolio</a>
+          <a href="#portfolio">Portfolio</a>
           <br>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="section1">
+      <section class="section1" id="home">
         <div>
           <h3>Hello</h3>
           <h1>I AM OPEYEMI ABOLAJI</h1>
           <h4>FULL-STACK WEB DEVELOPER</h4>
         </div>
         <div class="img1">
-          <!-- Placeholder for your profile image -->
+          <img class="profile-img" />
         </div>
       </section>
 
-      <section class="section2">
+      <section class="section2" id="about">
         <h4>LET ME INTRODUCE MYSELF</h4>
         <div>
           I’m a passionate Full-Stack Web Developer with a knack for building robust and user-friendly web applications.
@@ -58,7 +58,9 @@
         <div>
           With over two years of experience, I specialize in crafting seamless digital experiences using modern technologies like JavaScript, React, Node.js, and MongoDB. I thrive on solving complex problems, delivering high-quality code, and collaborating with teams to bring ideas to life. Let’s create something amazing together!
         </div>
-        <button>DOWNLOAD CV</button>
+        <a href="Files/OpeyemiAbolajiOpeyemiResume.pdf" download style="cursor: pointer;">
+          <button>DOWNLOAD CV</button>
+        </a>
       </section>
 
       <section class="webSection1">
@@ -77,7 +79,7 @@
         </div>
       </section>
 
-      <div class="services">
+      <div class="services" id="services">
         <h2 class="h2">SERVICES I OFFER</h2>
         <p>
           I provide a range of web development services tailored to meet your needs, ensuring functionality, aesthetics, and performance are top-notch.
@@ -107,37 +109,41 @@
         </div>
       </section>
 
-      <div class="recently">
+      <div class="recently" id="portfolio">
         <h2>RECENTLY DONE PROJECTS</h2>
       </div>
       <div class="webSection">
         <div class="web">
           <ion-icon name="logo-amazon"></ion-icon>
-          <h2 class="h2">E-COMMERCE PLATFORM</h2>
+          <h2 class="h2">KARA E-COMMERCE</h2>
           <p>
-            Developed a fully functional e-commerce site inspired by Amazon, featuring product listings, cart functionality, and secure checkout.
+            Developed a blockchain-based e-commerce platform with wallet integration, product listings, and a secure cart system.
           </p>
+          <a href="https://github.com/yourusername/kara-ecommerce" target="_blank" class="project-link">View Project</a>
         </div>
         <div class="web">
           <ion-icon name="logo-xbox"></ion-icon>
-          <h2 class="h2">GAMING PORTAL</h2>
+          <h2 class="h2">GAME HUB</h2>
           <p>
-            Built an interactive gaming portal with real-time features, user profiles, and a sleek, responsive design.
+            Built a gaming community site with real-time chat, user profiles, and responsive design using React and Node.js.
           </p>
+          <a href="https://github.com/yourusername/game-hub" target="_blank" class="project-link">View Project</a>
         </div>
         <div class="web">
           <ion-icon name="logo-apple"></ion-icon>
-          <h2 class="h2">TECH LANDING PAGE</h2>
+          <h2 class="h2">TECH STARTUP LANDING</h2>
           <p>
-            Designed and developed a minimalist landing page for a tech startup, optimized for conversions and mobile use.
+            Designed a sleek landing page for a tech startup, optimized for SEO and mobile responsiveness with HTML and CSS.
           </p>
+          <a href="https://github.com/yourusername/tech-landing" target="_blank" class="project-link">View Project</a>
         </div>
         <div class="web">
           <ion-icon name="logo-youtube"></ion-icon>
-          <h2 class="h2">VIDEO STREAMING APP</h2>
+          <h2 class="h2">STREAMLINE VIDEO</h2>
           <p>
-            Created a video streaming prototype with user authentication, video uploads, and a clean, modern interface.
+            Created a video streaming prototype with user authentication and video upload features using MERN stack.
           </p>
+          <a href="https://github.com/yourusername/streamline-video" target="_blank" class="project-link">View Project</a>
         </div>
       </div>
     </main>
@@ -147,10 +153,18 @@
         <div class="abo">ABOLAJI</div>
         <div class="followMe">FOLLOW ME</div>
         <div>
-          <ion-icon name="logo-facebook"></ion-icon>
-          <ion-icon name="logo-github"></ion-icon>
-          <ion-icon name="logo-google"></ion-icon>
-          <ion-icon name="logo-twitter"></ion-icon>
+          <a href="https://facebook.com/yourusername" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://github.com/yourusername" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://google.com/+yourusername" target="_blank">
+            <ion-icon name="logo-google"></ion-icon>
+          </a>
+          <a href="https://twitter.com/yourusername" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
         </div>
         <p>Abolajiopeyemi000@gmail.com</p>
         <div>Copyright © 2024 All rights reserved</div>
