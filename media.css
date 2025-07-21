@@ -77,6 +77,8 @@
     background-color: white;
     align-items: center;
     justify-content: center;
+    position: static; /* Reset position for desktop */
+    height: auto; /* Reset height for desktop */
   }
   .header2inside {
     display: flex;
@@ -86,9 +88,11 @@
     max-width: 950px;
     gap: 20px;
     padding: 10px 20px;
+    flex-direction: row;
   }
   .header2inside .homeBoy {
     display: flex;
+    flex-direction: row;
     gap: 30px;
     font-size: 16px;
   }
