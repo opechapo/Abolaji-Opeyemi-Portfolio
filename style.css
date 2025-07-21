@@ -10,14 +10,32 @@
   transition: all 0.3s ease-in-out;
 }
 
+/* Header styles for mobile */
 .header {
   background-color: black;
   padding: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
+/* Hamburger icon styles */
+.logo2 ion-icon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo2 ion-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile menu (header2) styles */
 .header2 {
   display: none;
   opacity: 0;
@@ -39,36 +57,30 @@
   align-items: center;
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.logo2 ion-icon {
-  color: white;
-  font-size: 24px;
 }
 
 .header2inside {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 .header2inside .homeBoy {
   flex-direction: column;
   gap: 20px;
-  text-align: center;
 }
 
 .header2inside .homeBoy a {
   font-size: 18px;
   color: rgb(73, 73, 73);
+  text-decoration: none;
 }
 
 .header2inside .homeBoy a:hover {
   color: rgb(84, 64, 149);
 }
 
-/* Ensure logo0 is styled appropriately */
 .header2inside .logo0 h2 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -231,10 +243,14 @@
   text-align: center;
 }
 
-.web ion-icon {
-  font-size: 50px;
-  padding: 15px;
-  color: rgb(84, 64, 149);
+.web .service-img {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  object-fit: contain;
+  /* border: 2px solid; */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .web h2 {
