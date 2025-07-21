@@ -1,209 +1,217 @@
-*{
+/* Ensure base styles are mobile-friendly */
+* {
   margin: 0;
   padding: 0;
   border: none;
   outline: none;
   box-sizing: border-box;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
-.header{
+.header {
   background-color: black;
-  padding: 15px;
+  padding: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header2{
+
+.header2 {
   display: none;
 }
-.logo2 ion-icon{
+
+.logo2 ion-icon {
   color: white;
+  font-size: 24px;
 }
-.section1{
-  font-size: 25px;
-  padding: 30px;
+
+.section1 {
+  font-size: 18px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   font-weight: bold;
-  /* margin-top: 150px; */
-  width: 250px;
-  /* border: 2px solid black; */
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
-.section1 h3{
-  margin-right: 100px;
+
+.section1 h3 {
+  text-align: center;
 }
-.img1{
+
+.img1 {
   display: none;
 }
 
-.section2{
+.section2 {
   padding: 20px;
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 50px;
   gap: 10px;
-  width: 500px;
-
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
 }
-.section2 h4{
-  font-size: 25px;
+
+.section2 h4 {
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20px;
-  
-  
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .section2 div {
   color: rgb(118, 117, 117);
-  line-height: 2;
+  line-height: 1.8;
+  text-align: center;
+}
 
-}
-.section2 button{
-  background-color:rgb(83, 83, 210);
-  padding: 20px 60px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  color: white;
-}
-.callBox{
+.callBox {
   background-color: rgb(246, 246, 253);
-  /* width: 300px; */
-  /* height: 250px; */
-  padding: 20px;
-  margin-left: 60px;
+  padding: 15px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  /* gap: 40px; */
-
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
 }
-.callUs{
+
+.callUs {
   display: flex;
   flex-direction: row;
-}
-.callnow{
-  display: flex;
-  flex-direction: column;
-}
-.callUs ion-icon{
-  font-size: 60px;
-}
-.callnow p{
-  color: rgb(122, 122, 245);
-  
-}
-.call10{
-  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.call10 h1{
-  font-size: 110px;
-  font-weight: bold;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: rgb(84, 64, 149);
-
-}
-.call10 p{
-  font-size: 30px;
-
-}
-.services{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 50px;
   gap: 10px;
 }
-.services p{
-  color: rgb(118, 117, 117);
-  line-height: 2;
+
+.callnow {
+  display: flex;
+  flex-direction: column;
 }
-.h2{
-  font-size: 25px;
+
+.callUs ion-icon {
+  font-size: 40px;
+}
+
+.callnow p {
+  color: rgb(122, 122, 245);
+}
+
+.call10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.call10 h1 {
+  font-size: 80px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(84, 64, 149);
+}
+
+.call10 p {
+  font-size: 20px;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.services p {
+  color: rgb(118, 117, 117);
+  line-height: 1.8;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
-.web{
+
+.web {
   background-color: rgb(246, 246, 253);
-  /* width: 350px; */
-  padding: 50px;
-  /* margin-left: 60px; */
+  padding: 20px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* gap: 40px; */
+  width: 100%;
 }
-.webSection1{
-  width: 500px;
-  justify-content: space-between;
-}
-.webSection{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 50px;
-  /* border: 2px solid black; */
-  width: 450px;
-}
-.web p{
-  color: rgb(118, 117, 117);
-  
-}
-.web ion-icon{
-  font-size: 70px;
-  padding: 20px;
-  color: rgb(84, 64, 149);
-  
-}
-.web h2{
-  color: rgb(73, 73, 73);
 
-
-}
-.recently{
-  font-size: 16px;
+.webSection {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  margin-top:40px;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
-.footer{
+.webSection1 {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.web p {
+  color: rgb(118, 117, 117);
+  text-align: center;
+}
+
+.web ion-icon {
+  font-size: 50px;
+  padding: 15px;
+  color: rgb(84, 64, 149);
+}
+
+.web h2 {
+  color: rgb(73, 73, 73);
+}
+
+.recently {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.footer {
   background-color: rgb(184, 184, 219);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 16px;
   color: rgb(118, 117, 117);
-
-}
-.abo{
-  color: rgb(83, 83, 210);
-  font-size: 30px;
-  font-weight: bold;
-  
-}
-.section3{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 20px;
 }
