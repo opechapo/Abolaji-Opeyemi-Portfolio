@@ -12,24 +12,29 @@
       <a href="#home" class="logo">
         <h2>OPEYEMI ABOLAJI</h2>
       </a>
-      <a href="#nav-menu" class="logo2">
+      <a
+        href="#nav-menu"
+        class="logo2"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
         <ion-icon name="menu-outline"></ion-icon>
       </a>
+      <div class="homeBoy desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+      </div>
     </header>
 
     <header class="header2">
       <div class="header2inside">
-        <div>
-          <a href="#home" class="logo0">
-            <h2>OPEYEMI ABOLAJI</h2>
-          </a>
-        </div>
-        <div class="homeBoy">
+        <div class="homeBoy mobile-nav">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#portfolio">Portfolio</a>
-          <br />
         </div>
       </div>
     </header>
@@ -63,7 +68,7 @@
           With over two years of experience, I specialize in crafting seamless
           digital experiences with JavaScript, React, Node.js, and MongoDB,
           alongside designing intuitive UI/UX and converting designs into
-          real-world websites using code (e.g., HTML, CSS,) or no-code platforms
+          real-world websites using code (e.g., HTML, CSS) or no-code platforms
           like WordPress and Framer. As a blockchain expert, I write smart
           contracts for Ethereum and other cryptocurrencies, delivering
           high-quality code and innovative solutions. Let’s build something
@@ -72,19 +77,7 @@
         <a
           href="Files/Opeyemi Abolaji CV 19-07-25.pdf"
           download
-          style="
-            display: inline-block;
-            background-color: indigo;
-            border-radius: 10px;
-            padding: 12px 20px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-          "
-          onMouseOver="this.style.backgroundColor='darkblue'"
-          onMouseOut="this.style.backgroundColor='indigo'"
+          class="download-cv"
         >
           DOWNLOAD CV HERE
         </a>

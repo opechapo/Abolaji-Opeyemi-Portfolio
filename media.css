@@ -78,37 +78,34 @@
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .header {
-    display: flex; /* Keep mobile header visible */
-    top: 0;
-    z-index: 1001; /* Ensure it’s above .header2 */
-  }
-  .header2 {
     display: flex;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
     position: static;
-    height: auto;
-    margin-top: 50px; /* Offset to avoid overlap with .header */
-  }
-  .header2inside {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 950px;
-    gap: 20px;
+    z-index: 1001;
+    background-color: black; /* Consistent with mobile header */
     padding: 10px 20px;
-    flex-direction: row;
   }
-  .header2inside .homeBoy {
+  .logo2 {
+    display: none; /* Hide hamburger icon */
+  }
+  .homeBoy.desktop-nav {
     display: flex;
     flex-direction: row;
     gap: 30px;
     font-size: 16px;
   }
-  .header2inside .logo0 h2 {
-    margin-left: 0;
+  .homeBoy.desktop-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .homeBoy.desktop-nav a:hover {
+    color: white;
+    background-color: rgb(84, 64, 149);
+  }
+  .header2 {
+    display: none; /* Hide mobile modal header */
   }
   .section1 {
     width: 90%;
@@ -163,11 +160,10 @@
     width: 90%;
     max-width: 1200px;
   }
-  .header2inside {
-    gap: 30px;
-    max-width: 1200px;
+  .header {
+    padding: 10px 30px;
   }
-  .header2inside .homeBoy {
+  .homeBoy.desktop-nav {
     gap: 40px;
   }
 }
@@ -196,7 +192,7 @@
     width: 90%;
     max-width: 1250px;
   }
-  .header2inside {
-    max-width: 1300px;
+  .header {
+    padding: 10px 40px;
   }
 }
