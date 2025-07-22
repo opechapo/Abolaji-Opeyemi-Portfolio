@@ -279,8 +279,8 @@
 }
 
 .web .service-img {
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
   padding: 10px;
   object-fit: contain;
   border-radius: 10px;
