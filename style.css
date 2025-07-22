@@ -107,8 +107,8 @@
 
 .img1 {
   display: block; /* Make image visible in mobile view */
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .img1 img {
