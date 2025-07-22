@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: static;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -98,7 +98,7 @@
   font-weight: bold;
   width: 100%;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 60px auto 20px; /* Adjusted margin-top to account for fixed header */
 }
 
 .section1 h3 {
@@ -106,7 +106,16 @@
 }
 
 .img1 {
-  display: none;
+  display: block; /* Make image visible in mobile view */
+  width: 100px;
+  height: 100px;
+}
+
+.img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .section2 {
@@ -248,9 +257,7 @@
   height: 250px;
   padding: 10px;
   object-fit: contain;
-  /* border: 2px solid; */
   border-radius: 10px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .web h2 {
