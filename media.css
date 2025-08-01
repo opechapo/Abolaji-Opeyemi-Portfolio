@@ -1,198 +1,128 @@
-/* Mobile-first base styles are in style.css */
-
-/* Small devices (tablets, 460px and up) */
-@media screen and (min-width: 460px) {
-  .section1 {
-    width: 90%;
-    max-width: 450px;
-    font-size: 22px;
-  }
-  .img1 {
-    width: 120px;
-    height: 120px;
-  }
-  .section2 {
-    width: 90%;
-    max-width: 450px;
-  }
-  .webSection {
-    width: 90%;
-    max-width: 460px;
-    padding: 20px;
-  }
-  .webSection1 {
-    width: 90%;
-    max-width: 410px;
-  }
-  .services,
-  .recently {
-    width: 90%;
-    max-width: 450px;
-  }
-}
-
 /* Medium devices (small tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  .section1 {
-    width: 90%;
-    max-width: 650px;
-    font-size: 28px;
+  .hero {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
     align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+    padding: 60px 40px;
   }
-  .img1 {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
+
+  .hero-content {
+    max-width: 500px;
   }
-  .img1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+
+  .hero h1 {
+    font-size: 40px;
   }
-  .section2 {
-    width: 90%;
-    max-width: 780px;
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
   }
-  .webSection {
+
+  .about-content {
+    max-width: 600px;
+  }
+
+  .call-box {
+    flex-direction: row;
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  .services-grid,
+  .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 90%;
-    max-width: 750px;
-    gap: 20px;
-  }
-  .webSection1 {
-    width: 90%;
     max-width: 700px;
-  }
-  .services,
-  .recently {
-    width: 90%;
-    max-width: 780px;
+    gap: 30px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .header {
-    display: flex;
-    position: static;
-    z-index: 1001;
-    background-color: black; /* Consistent with mobile header */
-    padding: 10px 20px;
+    padding: 20px 40px;
   }
-  .logo2 {
-    display: none; /* Hide hamburger icon */
+
+  .menu-toggle {
+    display: none;
   }
-  .homeBoy.desktop-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    font-size: 16px;
+
+  .desktop-nav {
+    display: block;
   }
-  .homeBoy.desktop-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+
+  .mobile-nav-modal {
+    display: none !important;
   }
-  .homeBoy.desktop-nav a:hover {
-    color: white;
-    background-color: rgb(84, 64, 149);
+
+  .hero {
+    padding: 80px 40px;
   }
-  .header2 {
-    display: none; /* Hide mobile modal header */
+
+  .hero h1 {
+    font-size: 48px;
   }
-  .section1 {
-    width: 90%;
+
+  .about-content {
+    max-width: 800px;
+  }
+
+  .call-box {
     max-width: 900px;
-    font-size: 32px;
   }
-  .img1 {
-    width: 200px;
-    height: 200px;
-  }
-  .section2 {
-    width: 90%;
-    max-width: 920px;
-  }
-  .webSection {
-    width: 90%;
-    max-width: 920px;
-  }
-  .webSection1 {
-    width: 90%;
-    max-width: 870px;
-  }
-  .services,
-  .recently {
-    width: 90%;
-    max-width: 920px;
+
+  .services-grid,
+  .portfolio-grid {
+    max-width: 900px;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  .section1 {
-    width: 90%;
-    max-width: 1150px;
-    font-size: 40px;
+  .hero {
+    max-width: 1100px;
+    margin: 0 auto;
   }
-  .section2 {
-    width: 90%;
-    max-width: 1200px;
+
+  .hero h1 {
+    font-size: 56px;
   }
-  .webSection {
-    width: 90%;
-    max-width: 1155px;
-    gap: 30px;
+
+  .about-content {
+    max-width: 1000px;
   }
-  .webSection1 {
-    width: 90%;
+
+  .call-box {
     max-width: 1100px;
   }
-  .services,
-  .recently {
-    width: 90%;
-    max-width: 1200px;
-  }
-  .header {
-    padding: 10px 30px;
-  }
-  .homeBoy.desktop-nav {
-    gap: 40px;
+
+  .services-grid,
+  .portfolio-grid {
+    max-width: 1100px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* Very large devices (1440px and up) */
 @media screen and (min-width: 1440px) {
-  .section1 {
-    width: 90%;
-    max-width: 1250px;
-    font-size: 48px;
+  .hero {
+    max-width: 1200px;
   }
-  .section2 {
-    width: 90%;
-    max-width: 1250px;
+
+  .about-content {
+    max-width: 1100px;
   }
-  .webSection {
-    width: 90%;
-    max-width: 1220px;
+
+  .call-box {
+    max-width: 1200px;
   }
-  .webSection1 {
-    width: 90%;
-    max-width: 1170px;
-  }
-  .services,
-  .recently {
-    width: 90%;
-    max-width: 1250px;
-  }
-  .header {
-    padding: 10px 40px;
+
+  .services-grid,
+  .portfolio-grid {
+    max-width: 1200px;
   }
 }

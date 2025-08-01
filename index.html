@@ -3,52 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Opeyemi Abolaji - Full-Stack Web Developer and Graphic Designer Portfolio"
+    />
+    <meta
+      name="keywords"
+      content="web developer, graphic designer, blockchain, portfolio, Opeyemi Abolaji"
+    />
+    <meta name="author" content="Opeyemi Abolaji" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Opeyemi Abolaji - Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <!-- Loading Animation -->
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
       <a href="#home" class="logo">
         <h2>OPEYEMI ABOLAJI</h2>
       </a>
-      <a
-        href="#nav-menu"
-        class="logo2"
+      <button
+        class="menu-toggle"
         aria-label="Toggle navigation menu"
         aria-expanded="false"
+        aria-controls="mobile-nav"
       >
         <ion-icon name="menu-outline"></ion-icon>
-      </a>
-      <div class="homeBoy desktop-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-      </div>
+      </button>
+      <nav class="desktop-nav" aria-label="Desktop navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <header class="header2">
-      <div class="header2inside">
-        <div class="homeBoy mobile-nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
-        </div>
+    <!-- Mobile Navigation Modal -->
+    <div class="mobile-nav-modal" id="mobile-nav">
+      <div class="mobile-nav-content">
+        <button class="close-nav" aria-label="Close navigation menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
 
     <main>
-      <section class="section1" id="home">
-        <div>
-          <h3>
-            Hi, im Opeyemi i Shape Designs into Real life Projects that deliver
-            results
-          </h3>
-          <br />
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1>Hi, I'm Opeyemi</h1>
+          <p>I shape designs into real-life projects that deliver results.</p>
         </div>
-        <div class="img1">
+        <div class="profile-img-container">
           <img
             src="images/1.jpg"
             alt="Opeyemi Abolaji Profile"
@@ -56,254 +82,235 @@
           />
         </div>
       </section>
-      <section class="section2" id="about">
-        <h4>LET ME INTRODUCE MYSELF</h4>
-        <div>
-          I'm Opeyemi Abolaji, a passionate Full-Stack Web Developer and skilled
-          Graphic Designer with a talent for creating robust, user-friendly web
-          applications and stunning visuals using tools like Photoshop, Adobe,
-          Figma, and Framer.
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <h2>Let Me Introduce Myself</h2>
+        <div class="about-content">
+          <p>
+            I'm Opeyemi Abolaji, a passionate Full-Stack Web Developer and
+            skilled Graphic Designer with a talent for creating robust,
+            user-friendly web applications and stunning visuals using tools like
+            Photoshop, Adobe, Figma, and Framer.
+          </p>
+          <p>
+            With over two years of experience, I specialize in crafting seamless
+            digital experiences with JavaScript, React, Node.js, and MongoDB,
+            alongside designing intuitive UI/UX and converting designs into
+            real-world websites using code (e.g., HTML, CSS) or no-code
+            platforms like WordPress and Framer. As a blockchain expert, I write
+            smart contracts for Ethereum and other cryptocurrencies, delivering
+            high-quality code and innovative solutions. Let’s build something
+            extraordinary together!
+          </p>
+          <a
+            href="Files/Opeyemi Abolaji CV 19-07-25.pdf"
+            download
+            class="cta-button"
+            >Download CV</a
+          >
         </div>
-        <div>
-          With over two years of experience, I specialize in crafting seamless
-          digital experiences with JavaScript, React, Node.js, and MongoDB,
-          alongside designing intuitive UI/UX and converting designs into
-          real-world websites using code (e.g., HTML, CSS) or no-code platforms
-          like WordPress and Framer. As a blockchain expert, I write smart
-          contracts for Ethereum and other cryptocurrencies, delivering
-          high-quality code and innovative solutions. Let’s build something
-          extraordinary together!
-        </div>
-        <a
-          href="Files/Opeyemi Abolaji CV 19-07-25.pdf"
-          download
-          class="download-cv"
-        >
-          DOWNLOAD CV HERE
-        </a>
       </section>
 
-      <section class="webSection1">
-        <div class="callBox">
-          <div class="call10">
-            <h1>2</h1>
-            <p>Years of Working Experience</p>
+      <!-- Call to Action Section -->
+      <section class="call-to-action">
+        <div class="call-box">
+          <div class="experience">
+            <h3>2</h3>
+            <p>Years of Experience</p>
           </div>
-          <div class="callUs">
-            <ion-icon name="call"></ion-icon>
-            <div class="callnow">
-              <p>CALL OR TEXT US</p>
-              <div>(+234)812-554-3366</div>
+          <div class="contact-info">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            <div>
+              <p>Call or Text</p>
+              <a href="tel:+2348125543366">(+234) 812-554-3366</a>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="services" id="services">
-        <h2 class="h2">SERVICES I OFFER</h2>
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <h2>Services I Offer</h2>
         <p>
-          I provide a range of web development services tailored to meet your
-          needs, ensuring functionality, aesthetics, and performance are
-          top-notch.
+          Transforming ideas into reality with tailored web and design
+          solutions.
         </p>
-      </div>
-      <section class="webSection">
-        <div class="web">
-          <img
-            src="images/web dev image1.webp"
-            alt="Web Development"
-            class="service-img"
-          />
-          <h2 class="h2">WEBSITE DEVELOPMENT</h2>
-          <p>
-            I craft dynamic, scalable, and high-performance websites using
-            modern technologies like JavaScript, React, and Node.js, delivering
-            seamless functionality and exceptional user experiences tailored to
-            your business needs.
-          </p>
-        </div>
-        <div class="web">
-          <img
-            src="images/web design image1.webp"
-            alt="Web Design"
-            class="service-img"
-          />
-          <h2 class="h2">WEBSITE DESIGN</h2>
-          <p>
-            I design visually stunning and user-centric interfaces that
-            captivate audiences, enhance engagement, and align perfectly with
-            your brand identity, ensuring a cohesive and memorable online
-            presence.
-          </p>
-        </div>
-        <div class="web">
-          <img
-            src="images/product management image1.jpg"
-            alt="Product Management"
-            class="service-img"
-          />
-          <h2 class="h2">PRODUCT MANAGEMENT</h2>
-          <p>
-            I guide products from concept to launch, bridging technical
-            development and strategic business goals to deliver innovative
-            solutions that drive growth and exceed expectations.
-          </p>
-        </div>
-        <div class="web">
-          <img
-            src="images/graphics design image1.jpg"
-            alt="Graphic Design"
-            class="service-img"
-          />
-          <h2 class="h2">GRAPHICS DESIGN</h2>
-          <p>
-            I create compelling and professional visuals, including logos,
-            banners, and marketing assets, that elevate your brand’s aesthetic
-            and communicate your message with clarity and impact.
-          </p>
+        <div class="services-grid">
+          <div class="service-card" style="animation-delay: 0s">
+            <img
+              src="images/web dev image1.webp"
+              alt="Web Development"
+              class="service-img"
+            />
+            <h3>Website Development</h3>
+            <p>
+              I craft dynamic, scalable, and high-performance websites using
+              modern technologies like JavaScript, React, and Node.js.
+            </p>
+          </div>
+          <div class="service-card" style="animation-delay: 0.2s">
+            <img
+              src="images/web design image1.webp"
+              alt="Web Design"
+              class="service-img"
+            />
+            <h3>Website Design</h3>
+            <p>
+              I design visually stunning and user-centric interfaces that
+              captivate audiences and align with your brand.
+            </p>
+          </div>
+          <div class="service-card" style="animation-delay: 0.4s">
+            <img
+              src="images/product management image1.jpg"
+              alt="Product Management"
+              class="service-img"
+            />
+            <h3>Product Management</h3>
+            <p>
+              I guide products from concept to launch, ensuring strategic
+              alignment and innovative solutions.
+            </p>
+          </div>
+          <div class="service-card" style="animation-delay: 0.6s">
+            <img
+              src="images/graphics design image1.jpg"
+              alt="Graphic Design"
+              class="service-img"
+            />
+            <h3>Graphic Design</h3>
+            <p>
+              I create compelling visuals, including logos and banners, to
+              elevate your brand’s aesthetic.
+            </p>
+          </div>
         </div>
       </section>
 
-      <div class="recently" id="portfolio">
-        <h2>RECENTLY DONE PROJECTS</h2>
-      </div>
-      <div class="webSection">
-        <div class="web">
-          <img
-            src="images/Kara landing page.png"
-            alt="KARA Blockchain Marketplace"
-            class="service-img"
-          />
-          <h2 class="h2">KARA (Blockchain-based marketplace)</h2>
-          <p>
-            Kara is a blockchain-based e-commerce marketplace platform where you
-            can trade your goods and services directly for cryptocurrency
-            without needing to change to FIAT currency. With a non-custodian
-            wallet system where you are in total control of your wallet, product
-            listings, and a secure cart system.
-          </p>
-          <a
-            href="https://kara-frontend.vercel.app/"
-            target="_blank"
-            class="project-link"
-            >View the Project</a
-          >
+      <!-- Portfolio Section -->
+      <section class="portfolio" id="portfolio">
+        <h2>Recently Done Projects</h2>
+        <div class="portfolio-grid">
+          <div class="project-card">
+            <img
+              src="images/Kara landing page.png"
+              alt="KARA Blockchain Marketplace"
+              class="project-img"
+            />
+            <h3>KARA</h3>
+            <p>
+              A blockchain-based e-commerce marketplace for trading goods and
+              services with cryptocurrency.
+            </p>
+            <a
+              href="https://kara-frontend.vercel.app/"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <img
+              src="images/JaraFi landing page.png"
+              alt="JaraFi Platform"
+              class="project-img"
+            />
+            <h3>JaraFi</h3>
+            <p>
+              A blockchain-powered platform for seamless and secure financial
+              transactions.
+            </p>
+            <a href="https://jarafi.xyz/" target="_blank" class="project-link"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <img
+              src="images/DLTAfrica landing page.png"
+              alt="DLTAfrica Landing Page"
+              class="project-img"
+            />
+            <h3>DLTAfrica</h3>
+            <p>
+              An institution building Web3 talents through full-stack and smart
+              contract development.
+            </p>
+            <a href="https://dltafrica.io/" target="_blank" class="project-link"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <img
+              src="images/little taco shop.png"
+              alt="Little Taco Shop"
+              class="project-img"
+            />
+            <h3>Little Taco Shop</h3>
+            <p>
+              A vibrant taco shop website built to showcase a unique dining
+              experience.
+            </p>
+            <a
+              href="https://the-little-taco-shop-hazel.vercel.app/"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <img
+              src="images/smadeh landing page.png"
+              alt="Smadeh Kitchen"
+              class="project-img"
+            />
+            <h3>Smadeh Kitchen</h3>
+            <p>
+              An authentic African cuisine website featuring Nigerian dishes
+              like Moi-Moi and Jollof.
+            </p>
+            <a
+              href="https://smadeh-kitchen.vercel.app/"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+          </div>
         </div>
-        <div class="web">
-          <img
-            src="images/JaraFi landing page.png "
-            alt="JaraFi Platform"
-            class="service-img"
-          />
-          <h2 class="h2">JaraFi (blockchain-powered)</h2>
-          <p>
-            JaraFi is a blockchain-powered platform designed to enable seamless
-            financial transactions with enhanced security and efficiency.
-          </p>
-          <a href="https://jarafi.xyz/" target="_blank" class="project-link"
-            >View the Project</a
-          >
-        </div>
-        <div class="web">
-          <img
-            src="images/DLTAfrica landing page.png"
-            alt="DLTAfrica Landing Page"
-            class="service-img"
-          />
-          <h2 class="h2">DLTAfrica</h2>
-          <p>
-            DLTAfrica is an institution that help build Web3 talents from ground
-            zero, through full-stack and smart contract developments.
-          </p>
-          <a href="https://dltafrica.io/" target="_blank" class="project-link"
-            >View the Project</a
-          >
-        </div>
-        <div class="web">
-          <img
-            src="images/little taco shop.png"
-            alt="little taco shop"
-            class="service-img"
-          />
-          <h2 class="h2">Little Taco Shop</h2>
-          <p>
-            LTS was founded in 2022. Our shop was built from a love of tacos
-            🌮🌮🌮. We hope our shop adds a unique and interesting place to our
-            little town.
-          </p>
-          <a
-            href="https://the-little-taco-shop-hazel.vercel.app/"
-            target="_blank"
-            class="project-link"
-            >View the Project</a
-          >
-        </div>
-        <div class="web">
-          <img
-            src="images/smadeh landing page.png"
-            alt="smadeh kitchen"
-            class="service-img"
-          />
-          <h2 class="h2">Smadeh kitchen</h2>
-          <p>
-            Savor the flavors of Africa authentic African cuisine experience the
-            rich and vibrant tastes of Nigeria at Smadeh Kitchen. From savory
-            Moi-Moi to spicy Jollof, we bring tradition to your plate.
-          </p>
-          <a
-            href="https://smadeh-kitchen.vercel.app/"
-            target="_blank"
-            class="project-link"
-            >View the Project</a
-          >
-        </div>
-        <!-- <div class="web">
-          <ion-icon name="logo-youtube"></ion-icon>
-          <h2 class="h2">STREAMLINE VIDEO</h2>
-          <p>
-            Created a video streaming prototype with user authentication and
-            video upload features using MERN stack.
-          </p>
-          <a
-            href="https://github.com/yourusername/streamline-video"
-            target="_blank"
-            class="project-link"
-            >View Project</a
-          >
-        </div> -->
-      </div>
+      </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <div class="footer">
-        <div>Designed and Built by Opeyemi Abolaji</div>
-        <div>© 2025 All rights reserved</div>
-        <div>
+      <div class="footer-content">
+        <p>Designed and Built by Opeyemi Abolaji</p>
+        <p>&copy; 2025 All rights reserved</p>
+        <div class="social-links">
           <a
             href="https://x.com/abolajiopeyem17"
             target="_blank"
-            aria-label="Visit Opeyemi Abolaji's X profile"
+            aria-label="Twitter profile"
           >
             <ion-icon name="logo-twitter"></ion-icon>
           </a>
           <a
             href="https://github.com/opechapo"
             target="_blank"
-            aria-label="Visit Opeyemi Abolaji's GitHub profile"
+            aria-label="GitHub profile"
           >
             <ion-icon name="logo-github"></ion-icon>
           </a>
           <a
             href="mailto:Abolajiopeyemi000@gmail.com"
-            target="_blank"
-            aria-label="Email Opeyemi Abolaji"
+            aria-label="Email Opeyemi"
           >
-            <ion-icon name="logo-google"></ion-icon>
+            <ion-icon name="mail-outline"></ion-icon>
           </a>
         </div>
       </div>
     </footer>
 
+    <!-- Scripts -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
